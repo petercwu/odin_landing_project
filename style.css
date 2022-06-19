@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    height: 100vh;
 }
 
 .header,
@@ -31,7 +32,7 @@ ul {
 .content {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1;
 }
 .top {
     display: flex;
@@ -78,13 +79,12 @@ ul {
 .middle {
     display: flex;
     text-align: center;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    padding: 0 150px;
 }
 
 #info_header {
-    padding: 50px 0;
+    padding-top: 50px;
     text-align: center;
     font-weight: bold;
     font-size: 36px;
@@ -94,14 +94,48 @@ ul {
 .boxes {
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
+    padding: 50px 50px;
 }
 .blue_boxes {
     border-style: solid;
     border-width: 5px;
     border-color: #3882F6;
+    height: 100px;
 }
 
+.quote {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 75px;
+    background-color: #E5E7EB;
+}
+
+#quote_text {
+    margin-left: auto;
+    font-size: 36px;
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    background-color: #3882F6;
+    border-style: solid;
+    border-color: white;
+    border-width: 50px;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    color: #F9FAF8;
+    padding: 40px;
+}
+
+.bottom .right {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding: 5px;
+}
 .footer {
     text-align: center;
     padding: 10px 0;
